@@ -480,10 +480,29 @@ p {
     min-height: 135px;
 }
 
-.pt_42 {
-    padding-top: 42px;
+.pt_110px {
+    padding-top: 110px;
 }
 
+.pb_10px {
+    padding-bottom: 10px;
+}
+
+.accord_items {
+    background-color: var(--primary-color);
+}
+
+.pt_212 {
+    padding-top: 212px;
+}
+
+.pt_32px {
+    padding-top: 32px;
+}
+
+.padding_adjust {
+    padding: 20px 0 20px 32px;
+}
 
 /* .wrap {
     width: 100%;
@@ -523,7 +542,7 @@ p {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -533,7 +552,7 @@ p {
     width: 6px;
     background-color: transparent;
     top: 20px;
-    bottom: -20px;
+    bottom: -270px;
     left: 50%;
     margin-left: -2px;
     border-left: 3.23px dashed white;
@@ -547,9 +566,17 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     margin-bottom: 146px;
 }
 
-/* .mb_212 {
+.gap_13px {
+    gap: 13px;
+}
+
+.pb_164px {
+    padding-bottom: 164px;
+}
+
+.mb_212 {
     margin-bottom: 212px;
-} */
+}
 
 /* Container around content */
 .containers {
@@ -588,6 +615,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
 }
 
 
+
 /* Fix the circle for containers on the right side */
 .right::after {
     left: -21px;
@@ -599,7 +627,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
 
 /* The actual content */
 .content {
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
     position: relative;
     border-radius: 6px;
 }
@@ -616,7 +644,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     .containers {
         width: 100%;
         padding-left: 70px;
-        padding-right: 25px;
+        padding-right: 0px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -637,6 +665,10 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     .right {
         left: 0%;
     }
+
+    /* .content_end.mb_212 {
+        padding: 0 0 0 42px;
+    } */
 }
 
 /* end */
@@ -693,8 +725,30 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     .gap-80 {
         gap: 80px;
     }
+}
+
+@media (min-width: 992.9px) {
+    .containers.right {
+        padding: 0 0 0 42px;
+    }
+
+    .containers.left {
+        padding: 0 42px 0 0;
+    }
+
+    .right .content {
+        padding: 0 0 0 42px;
+    }
 
     .content_end {
         text-align: end;
+    }
+
+    .content_end.mb_212 {
+        padding: 20px 0px;
+    }
+
+    .containers.right {
+        padding: 20px 0px;
     }
 }
