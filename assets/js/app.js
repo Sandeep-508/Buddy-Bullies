@@ -43,6 +43,17 @@ label.addEventListener("click", () => {
 let scroll_top = document.querySelector(".scroll_to_top");
 let scrollPt = 200;
 
-scroll_top.addEventListener("click", () => { 
-    
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        scroll_top.style.display = "block";
+    } else {
+        scroll_top.style.display = "none";
+    }
+
+    scroll_top.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
 });

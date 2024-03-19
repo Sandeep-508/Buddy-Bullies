@@ -540,6 +540,25 @@ p {
     bottom: 20px;
 }
 
+.hover_it {
+    border: 1px solid var(--color-white);
+}
+
+.text_black {
+    color: var(--primary-color);
+}
+
+.hover_it:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.px_30px {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .disp_text {
     display: none;
 }
@@ -828,11 +847,6 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     }
 
     .px_30px_max {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-
-    .px_30px {
         padding-right: 30px;
         padding-left: 30px;
     }
