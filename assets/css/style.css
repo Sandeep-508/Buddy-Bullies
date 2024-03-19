@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    transition: all 400ms linear !important;
 }
 
 :root {
@@ -546,6 +547,35 @@ p {
 
 .text_black {
     color: var(--primary-color);
+}
+
+.hover_footer_item:hover {
+    -webkit-text-stroke: medium;
+    cursor: pointer;
+}
+
+.card_hover:hover {
+    transition: all 400ms linear;
+    box-shadow: 0px 0px 50px -3px #ffffff7c;
+}
+
+.card_hover:hover div img {
+    transition: all 400ms linear;
+    transform: translate(-5px, -5px);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.svg_hover:hover {
+    transition: all 400ms linear;
+    transform: scale(0.8);
+}
+
+.svg_hover:hover path {
+    -webkit-text-stroke: thick;
+    fill: var(--timeline-dot-color);
 }
 
 .hover_it:hover {

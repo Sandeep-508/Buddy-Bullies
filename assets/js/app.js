@@ -57,3 +57,12 @@ window.addEventListener("scroll", () => {
         });
     });
 });
+
+
+gsap.from(".scroll_to_top", {
+    duration: 0.5,
+    repeat: -1,
+    y: 20,
+    yoyo: true,
+});
+
