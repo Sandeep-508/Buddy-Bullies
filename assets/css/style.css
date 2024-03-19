@@ -711,6 +711,10 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     top: 4px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .stroke:hover {
     -webkit-text-stroke: medium;
 }
