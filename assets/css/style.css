@@ -561,7 +561,7 @@ p {
 
 .card_hover:hover div img {
     transition: all 400ms linear;
-    transform: translate(-5px, -5px);
+    transform: scale(1.2);
 }
 
 .cursor {
