@@ -689,6 +689,32 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     z-index: 1;
 }
 
+.containers.left::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: rgba(0, 157, 255, 0.1);
+    right: -31px;
+    border-radius: 50%;
+    top: 4px;
+}
+
+.containers.right::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: rgba(0, 157, 255, 0.1);
+    left: -32px;
+    border-radius: 50%;
+    top: 4px;
+}
+
+.stroke:hover {
+    -webkit-text-stroke: medium;
+}
+
 .pb-63 {
     padding-bottom: 63px;
 }
@@ -740,7 +766,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     /* Make sure that all arrows are pointing leftwards */
     .containers::before {
         left: 60px;
-        border: medium solid white;
+        /* border: medium solid white; */
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
@@ -761,6 +787,28 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     } */
     .p_adjust {
         padding: 20px 0px 24px !important;
+    }
+
+    .containers.left::before {
+        content: "";
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        background: rgba(0, 157, 255, 0.1);
+        left: 0;
+        border-radius: 50%;
+        top: 4px;
+    }
+
+    .containers.right::before {
+        content: "";
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        background: rgba(0, 157, 255, 0.1);
+        left: 0;
+        border-radius: 50%;
+        top: 4px;
     }
 }
 
@@ -847,6 +895,10 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
 
     .right .content {
         padding: 0 0 0 42px;
+    }
+
+    .h_lg_356px {
+        height: 356px;
     }
 
     .content_end {
