@@ -1007,12 +1007,12 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     }
 
     .padding_adjust {
-        padding: 20px 10px 20px 10px;
+        padding: 20px 20px 20px 20px;
         border-radius: 150px;
     }
 
     .padding_adjust_1 {
-        padding: 0px 10px 20px 10px;
+        padding: 20px 10px 20px 20px;
         border-radius: 150px;
     }
 }
