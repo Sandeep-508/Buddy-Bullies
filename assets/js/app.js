@@ -41,6 +41,7 @@ label.addEventListener("click", () => {
             body.style.overflow = "auto";
         });
     });
+    body.style.overflow = "auto";
 });
 
 let scroll_top = document.querySelector(".scroll_to_top");
