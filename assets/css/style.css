@@ -648,7 +648,7 @@ p {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 2px;
     background-color: transparent;
     background-image: url(../images/png/center_line.png);
     background-position: center;
