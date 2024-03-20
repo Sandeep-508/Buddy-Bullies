@@ -902,7 +902,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     }
 
     .h_lg_356px {
-        height: 356px;
+        max-height: 415px !important;
     }
 
     .content_end {

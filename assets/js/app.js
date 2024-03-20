@@ -29,13 +29,16 @@ accordion.forEach(element => {
 });
 
 let label = document.querySelector(".menubar");
+let body = document.body;
 let sm_screen = document.querySelector(".max-lg-view");
 label.addEventListener("click", () => {
+    body.style.overflow = "hidden";
     sm_screen.classList.toggle("show");
     let nav_items = document.querySelectorAll(".hover_effect");
     nav_items.forEach(otherElement => {
         otherElement.addEventListener("click", () => {
             sm_screen.classList.remove("show");
+            body.style.overflow = "auto";
         });
     });
 });
@@ -49,7 +52,6 @@ window.addEventListener("scroll", () => {
     } else {
         scroll_top.style.display = "none";
     }
-
     scroll_top.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
