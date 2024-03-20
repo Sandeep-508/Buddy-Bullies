@@ -69,3 +69,8 @@ gsap.from(".scroll_to_top", {
     yoyo: true,
 });
 
+let loader = document.querySelector(".preloader");
+loader.classList.remove("pos");
+setTimeout(() => {
+    loader.classList.add("pos");
+}, 3000);
