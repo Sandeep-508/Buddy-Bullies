@@ -379,10 +379,6 @@
     background-size: cover;
 }
 
-.pt_26 {
-    padding-top: 26px;
-}
-
 .text_w_h {
     max-width: 547px;
     min-height: 123px;
@@ -1030,5 +1026,9 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
 @media (max-width: 991.9px) {
     .timeline::after {
         bottom: -20px;
+    }
+
+    .pt_26 {
+        padding-top: 26px;
     }
 }
