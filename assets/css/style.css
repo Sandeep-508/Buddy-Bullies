@@ -329,6 +329,30 @@
     line-height: var(--lh-29);
 }
 
+.container_change {
+    max-width: 830px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_change_team_section {
+    max-width: 1012px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_change_roadmap {
+    max-width: 938px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .text_color {
     color: var(--color-white);
 }
@@ -562,7 +586,7 @@ p {
 }
 
 .hover_footer_item:hover {
-    -webkit-text-stroke: medium;
+    -webkit-text-stroke: thin;
     cursor: pointer;
 }
 
@@ -641,20 +665,12 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     padding: 0px 0px 24px 0px;
 }
 
-.mb_146 {
-    margin-bottom: 146px;
-}
-
 .gap_13px {
     gap: 13px;
 }
 
 .pb_164px {
     padding-bottom: 164px;
-}
-
-.mb_212 {
-    margin-bottom: 212px;
 }
 
 /* Container around content */
@@ -748,6 +764,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
+        bottom: -270px;
     }
 
     /* Full-width containers */
@@ -895,6 +912,10 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     .gap-80 {
         gap: 80px;
     }
+
+    .min_h_574px {
+        min-height: 574px;
+    }
 }
 
 @media (min-width: 992.9px) {
@@ -910,8 +931,8 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
         padding: 0 0 0 42px;
     }
 
-    .h_lg_356px {
-        max-height: 415px !important;
+    .h_lg_313px {
+        max-height: 313px !important;
     }
 
     .content_end {
@@ -993,5 +1014,21 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     .padding_adjust_1 {
         padding: 0px 10px 20px 10px;
         border-radius: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mb_146 {
+        margin-bottom: 146px;
+    }
+
+    .mb_212 {
+        margin-bottom: 212px;
+    }
+}
+
+@media (max-width: 991.9px) {
+    .timeline::after {
+        bottom: -20px;
     }
 }

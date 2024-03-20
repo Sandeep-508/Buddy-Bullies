@@ -14,7 +14,7 @@ accordion.forEach(element => {
                 let txt = other.querySelector(".disp_text");
                 let svg = other.querySelector(".svg_icon");
                 txt.style.display = "none";
-                svg.style.transform = "rotate(0deg f)"
+                svg.style.transform = "rotate(0deg)";
             }
         });
         let text_disp = window.getComputedStyle(text).display;
