@@ -41,9 +41,12 @@ label.addEventListener("click", () => {
             body.style.overflow = "auto";
         });
     });
-    body.style.overflow = "auto";
+    if (sm_screen.classList.contains("show")) {
+        body.style.overflow = "hidden";
+    } else {
+        body.style.overflow = "auto";
+    }
 });
-
 let scroll_top = document.querySelector(".scroll_to_top");
 let scrollPt = 200;
 
