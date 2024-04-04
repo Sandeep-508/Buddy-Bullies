@@ -712,7 +712,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     width: 64px;
     height: 64px;
     background: rgba(0, 157, 255, 0.1);
-    left: -32px;
+    left: -34px;
     border-radius: 50%;
     top: 4px;
 }
@@ -772,7 +772,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -21px;
+    left: -22px;
 }
 
 .left::after {
@@ -815,7 +815,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 10px;
+        left: 9px;
     }
 
     /* Make all right containers behave like the left ones */
@@ -847,7 +847,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
         width: 64px;
         height: 64px;
         background: rgba(0, 157, 255, 0.1);
-        left: 0;
+        left: -2px;
         border-radius: 50%;
         top: 4px;
     }
@@ -1053,7 +1053,7 @@ h2.fm.fw-600.fs-30.lh-45.text_color {
     }
 
     .fs_40 {
-        font-size: 40px;
+        font-size: var(--fs-40);
     }
 }
 
